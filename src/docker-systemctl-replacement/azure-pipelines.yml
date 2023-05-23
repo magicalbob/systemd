@@ -53,7 +53,7 @@ steps:
   inputs:
     testResultsFiles: '**/TEST-*.xml'
     testRunTitle: 'Basic Code Coverage (python3) without docker-based tests'
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2.198.0
   inputs:
     codeCoverageTool: Cobertura
     pathToSource: '$(System.DefaultWorkingDirectory)/docker-systemctl-replacement/'
