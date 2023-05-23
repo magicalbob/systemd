@@ -48,7 +48,7 @@ steps:
 - script: |
     find . -name '*.xml'
   displayName: 'find xml'
-- task: PublishTestResults@2
+- task: PublishTestResults@2.210.0
   condition: succeededOrFailed()
   inputs:
     testResultsFiles: '**/TEST-*.xml'
