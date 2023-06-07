@@ -48,12 +48,12 @@ steps:
 - script: |
     find . -name '*.xml'
   displayName: 'find xml'
-- task: PublishTestResults@2
+- task: PublishTestResults@2.210.0
   condition: succeededOrFailed()
   inputs:
     testResultsFiles: '**/TEST-*.xml'
     testRunTitle: 'Basic Code Coverage (python3) without docker-based tests'
-- task: PublishCodeCoverageResults@1.200.0
+- task: PublishCodeCoverageResults@2.198.0
   inputs:
     codeCoverageTool: Cobertura
     pathToSource: '$(System.DefaultWorkingDirectory)/docker-systemctl-replacement/'
