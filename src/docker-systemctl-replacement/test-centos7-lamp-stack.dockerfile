@@ -2,7 +2,7 @@
 ## this file is a copy from gdraheim/docker-systemctl-images where more real world examples are :)
 ## https://github.com/gdraheim/docker-systemctl-images/blob/develop/centos7-lamp-stack.dockerfile
 ###################################################################################################
-FROM centos:7.7.1908
+FROM centos:7.9.2009
 
 LABEL __copyright__="(C) Guido Draheim, licensed under the EUPL" \
       __version__="1.5.4264"
