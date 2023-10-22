@@ -2,7 +2,7 @@
 ## this file is a copy from gdraheim/docker-systemctl-images where more real world examples are :)
 ## https://github.com/gdraheim/docker-systemctl-images/blob/develop/opensuse15-lamp-stack.dockerfile
 ###################################################################################################
-FROM opensuse/leap:15.1
+FROM opensuse/leap:42.3
 
 LABEL __copyright__="(C) Guido Draheim, licensed under the EUPL" \
       __version__="1.5.4264"
