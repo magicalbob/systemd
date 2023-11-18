@@ -9,11 +9,9 @@ Run
 ===
 
 ```
-docker run -ti \
-       --tmpfs /tmp \
-       --tmpfs /run \
-       -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
+    docker run -d \             
        --privileged \
        --rm \
+       --name systemd \
        local:systemd
 ```
